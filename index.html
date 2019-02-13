@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>miccuci</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="学习github+hexo搭建博客">
+<meta name="keywords" content="github.io,hexo">
+<meta property="og:type" content="website">
+<meta property="og:title" content="miccuci">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="miccuci">
+<meta property="og:description" content="学习github+hexo搭建博客">
+<meta property="og:locale" content="chinese">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="miccuci">
+<meta name="twitter:description" content="学习github+hexo搭建博客">
+  
+    <link rel="alternate" href="/atom.xml" title="miccuci" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">miccuci</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">miccuci测试博客</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-css布局" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/13/css布局/" class="article-date">
+  <time datetime="2019-02-13T07:56:53.119Z" itemprop="datePublished">2019-02-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/13/css布局/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h3><p>margin/border/padding/content<br><br><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215178-5560c3fd-e4b2-499d-9532-351457a6e7c5.png#align=left&amp;display=inline&amp;height=186&amp;linkTarget=_blank&amp;originHeight=186&amp;originWidth=244&amp;size=0&amp;width=244" alt=""></p>
+<h3 id="行内元素与块级元素"><a href="#行内元素与块级元素" class="headerlink" title="行内元素与块级元素"></a>行内元素与块级元素</h3><ol>
+<li>块级元素</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div、ul、li、h1~h6、p</span><br></pre></td></tr></table></figure>
+<ul>
+<li>总是在新行上开始；</li>
+<li>高度，行高以及外边距和内边距都可控制；</li>
+<li>宽度缺省是它的容器的100%，除非设定一个宽度。</li>
+<li>它可以容纳内联元素和其他块元素</li>
+</ul>
+<ol>
+<li>行内元素</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">span、a、img、表单元素(input、select)等</span><br></pre></td></tr></table></figure>
+<ul>
+<li>和其他元素都在一行上；</li>
+<li>高，行高及外边距和内边距不可改变；</li>
+<li>宽度就是它的文字或图片的宽度，不可改变</li>
+<li>内联元素只能容纳文本或者其他内联元素</li>
+</ul>
+<p><strong>对行内元素，需要注意如下：</strong></p>
+<ul>
+<li>设置宽度width 无效。</li>
+<li>设置高度height 无效，可以通过line-height来设置。</li>
+<li>设置margin 只有左右margin有效，上下无效。</li>
+<li>设置padding 只有左右padding有效，上下则无效。注意元素范围是增大了，但是对元素周围的内容是没影响的。</li>
+</ul>
+<h3 id="布局与定位：display、float、position"><a href="#布局与定位：display、float、position" class="headerlink" title="布局与定位：display、float、position"></a>布局与定位：display、float、position</h3><ol>
+<li>display</li>
+</ol>
+<blockquote>
+<p>通过display属性对行内元素和块级元素进行切换</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215195-4fab7de2-1d99-4034-9d52-b2e05f914efa.png#align=left&amp;display=inline&amp;height=194&amp;linkTarget=_blank&amp;originHeight=194&amp;originWidth=637&amp;size=0&amp;width=637" alt=""></p>
+<ol>
+<li>float</li>
+</ol>
+<blockquote>
+<p>浮动元素不在文档的普通流中，文档的普通流中的元素表现的就像浮动元素不存在一样。浮动的框可以左右移动（根据float属性值而定），直到它的外边缘碰到包含框或者另一个浮动元素的框的边缘。</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215096-c94fcccc-d43b-410d-ae43-b436a4bca449.png#align=left&amp;display=inline&amp;height=383&amp;linkTarget=_blank&amp;originHeight=383&amp;originWidth=527&amp;size=0&amp;width=527" alt=""><br><br><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215127-fc14ae33-9d69-4321-a24a-0b9a83dea220.png#align=left&amp;display=inline&amp;height=372&amp;linkTarget=_blank&amp;originHeight=372&amp;originWidth=519&amp;size=0&amp;width=519" alt=""></p>
+<ol>
+<li>position</li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215477-a994c36a-7869-466c-9331-604566e5ce0d.png#align=left&amp;display=inline&amp;height=245&amp;linkTarget=_blank&amp;originHeight=275&amp;originWidth=839&amp;size=0&amp;width=746" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215604-4deece9d-faf5-45d2-b74c-dc8b4416ea33.png#align=left&amp;display=inline&amp;height=447&amp;linkTarget=_blank&amp;originHeight=447&amp;originWidth=663&amp;size=0&amp;width=663" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215140-6c0605ee-f0de-4155-8ed7-a225c1616942.png#align=left&amp;display=inline&amp;height=399&amp;linkTarget=_blank&amp;originHeight=399&amp;originWidth=668&amp;size=0&amp;width=668" alt=""></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215441-d1fa26a5-3a23-4666-9576-fb60a860931b.png#align=left&amp;display=inline&amp;height=450&amp;linkTarget=_blank&amp;originHeight=450&amp;originWidth=663&amp;size=0&amp;width=663" alt=""></p>
+<h3 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h3><p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html" target="_blank" rel="noopener">flex实例教程-阮一峰</a><br><br><code>http://www.ruanyifeng.com/blog/2015/07/flex-examples.html</code></p>
+<ol>
+<li>水平方向，左侧固定，右侧内容撑满<br><br><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215457-623a232c-c142-4ff2-aea1-b876618c8181.png#align=left&amp;display=inline&amp;height=342&amp;linkTarget=_blank&amp;originHeight=389&amp;originWidth=826&amp;size=0&amp;width=726" alt=""></li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"InputAddOn"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"InputAddOn-item"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"InputAddOn-field"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"InputAddOn-item"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.InputAddOn &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">&#125;</span><br><span class="line">.InputAddOn-field &#123;</span><br><span class="line">  flex: 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>垂直方向，底部固定，中间内容撑满<br><br><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215688-bf7971f2-4005-44a2-8db9-0ada38e0856c.png#align=left&amp;display=inline&amp;height=362&amp;linkTarget=_blank&amp;originHeight=488&amp;originWidth=979&amp;size=0&amp;width=726" alt=""></li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">class</span>=<span class="string">"Site"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">header</span>&gt;</span>...<span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">main</span> <span class="attr">class</span>=<span class="string">"Site-content"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">footer</span>&gt;</span>...<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.Site &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  min-height: 100vh;</span><br><span class="line">  flex-direction: column;</span><br><span class="line">&#125;</span><br><span class="line">.Site-content &#123;</span><br><span class="line">  flex: 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>圣杯布局<br><br><img src="https://cdn.nlark.com/yuque/0/2019/png/128974/1550037215219-25326987-bdf7-4996-9e44-1c676ac2b6a1.png#align=left&amp;display=inline&amp;height=347&amp;linkTarget=_blank&amp;originHeight=445&amp;originWidth=931&amp;size=0&amp;width=726" alt=""></li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">class</span>=<span class="string">"HolyGrail"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">header</span>&gt;</span>...<span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"HolyGrail-body"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">main</span> <span class="attr">class</span>=<span class="string">"HolyGrail-content"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">main</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">"HolyGrail-nav"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">aside</span> <span class="attr">class</span>=<span class="string">"HolyGrail-ads"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">aside</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">footer</span>&gt;</span>...<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.HolyGrail &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  min-height: 100vh;</span><br><span class="line">  flex-direction: column;</span><br><span class="line">&#125;</span><br><span class="line">header,</span><br><span class="line">footer &#123;</span><br><span class="line">  flex: 1;</span><br><span class="line">&#125;</span><br><span class="line">.HolyGrail-body &#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  flex: 1;</span><br><span class="line">&#125;</span><br><span class="line">.HolyGrail-content &#123;</span><br><span class="line">  flex: 1;</span><br><span class="line">&#125;</span><br><span class="line">.HolyGrail-nav, .HolyGrail-ads &#123;</span><br><span class="line">  /* 两个边栏的宽度设为12em */</span><br><span class="line">  flex: 0 0 12em;</span><br><span class="line">&#125;</span><br><span class="line">.HolyGrail-nav &#123;</span><br><span class="line">  /* 导航放到最左边 */</span><br><span class="line">  order: -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="案例分析"><a href="#案例分析" class="headerlink" title="案例分析"></a>案例分析</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/13/css布局/" data-id="cjs2wp5an0001zgox97vz90jf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/13/hello-world/" class="article-date">
+  <time datetime="2019-02-13T07:33:04.819Z" itemprop="datePublished">2019-02-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/02/13/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/13/hello-world/" data-id="cjs2wp5a70000zgoxjvjplqnw" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/02/13/css布局/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/13/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Shunwang Tan<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
